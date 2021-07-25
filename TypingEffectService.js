@@ -30,7 +30,7 @@ function TypingEffect() {
 
   this.start = (titles, setState) => {
 
-    const intervalDelay = titles.reduce((acc, title) => title.length + acc, arr.length * 20);
+    const intervalDelay = titles.reduce((acc, title) => title.length + acc, titles.length * 20);
     
     iterateOverTitlesOnce(setState, titles);
 
